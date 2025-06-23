@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2b1d45241.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu();"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <br>
+                     <div class="hover-underline"><span>Abhi</span> Chaudhari</div><br>
+                    From Bhusawal</h1>
+            </div>
+        </div>
+    </div>
+    <!------------About Section------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <div class="hover-underline"><h1 class="sub-tittle">About Me</h1></div>
+                    <br><br>
+                    <p>Highly motivated and detail-oriented BCA graduate with strong foundation in computer application. 
+                        Proficient in programming languages, software development, and problem-solving. 
+                        Seeking a challenging role that leverages my technical skills and passion for innovation 
+                        to drive business growth and success.</p>                   
+
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>CoursWork/Skills</span><br>HTML, CSS, JavaScript, PHP, C, C++, Java, Linux, C#.Net,
+                                Asp.Net Framework, Data Structure, RDBMS, MySQL, Android, Cloud Computing, Cyber
+                                Security, E-Com. , M-Com. , Financial Accounting, Tally ERP</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>March 2025</span><br>15 Days Workshop of Designing Web/App Interfaces</li>
+                            <li><span>Oct 2024-Dec 2025</span><br>Web Development Inernship At Tech-Octanet Services Pvt Ltd.
+                            <br>Worked closely with the development team to create responsive and user-friendly web pages using HTML, CSS, JavaScript, and other modern tools. Helped improve features, fix bugs, and connect web pages with bank-end systems. 
+                            Also got hand-on experience using Git for version control and followed an agile workflow to manage tasks efficiently.</li>
+                            <li><span>May 2024-Nov 2024</span><br>Company Apprentice At Mahindra & Mahindra Pvt Ltd.
+                           <br>Dedicated apprentice with 6 months of experience in I handled and organized detailed engine data using excel, 
+                            ensuring everything was accurate and easy to access. I also created clear power point presentations to help HR and other teams understand complex data, 
+                            making our processes more efficient and collaborative, and teamwork. 
+                            Passionate about automotive engineering with a focus on precision and quality.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>BCA Graducation From P. O. Nahata Collage, Bhusawal<br>74.60% [8.71 CGPA] A+ Grade</li>
+                            <li><span>2019-2021</span><br>12th Form MG Highschool & Jr Collage, Varangaon<br>76.20%</li>
+                            <li><span>2018-2019</span><br>10th From MG Highschool & Jr Collage, Varangaon<br>65.20%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Services---------------->
+    <div id="services">
+        <div class="container">
+            <div class="hover-underline"><h1 class="sub-tittle">My Services</h1></div>            
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UX/UI design</h2>
+                    <p>I create visually appealing and user-friendly websites.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I build robust and scalable Web applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>I build intuitive mobile applications that enhance user experience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <div class="hover-underline"><h1 class="sub-tittle">My Work</h1></div>  
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This app connects people through social media, allowing them to share updates, photos, and
+                            messages with friends and family.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Web Sites</h3>
+                        <p>I design and develop websites that are not only visually appealing but also user-friendly and
+                            responsive.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>This app provides a seamless shopping experience, allowing users to browse and purchase products
+                            with ease.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!----------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <div class="hover-underline"><h1 class="sub-tittle">Contact Me</h1></div>
+                    
+                    <br><br><p><i class="fa-solid fa-paper-plane"></i> itss.abhi.here@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 86059 90362</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1C9nS8KGTt/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/+918605990362"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/abhishek.chaudhari1?igsh=Ynh1N3dzcGE4bWg0"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/Resume-Abhishek.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea rows="5" name="Message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Abhi - Portfolio.<i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontents = document.querySelectorAll(".tab-contents");
+        function opentab(tabname) {
+            tablinks.forEach((tablink) => {
+                tablink.classList.remove("active-link");
+            });
+            tabcontents.forEach((tabcontent) => {
+                tabcontent.classList.remove("active-tab");
+            });
+
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw0Pm7oEp4i4p2um4N33aIaK89KhSEo0kMYtYbrtS1wQSLKYSmtJyPB0RQ6s9aSDiLT/exec'
+  const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(function() {
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+
+</html>
